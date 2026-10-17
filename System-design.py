@@ -7,3 +7,9 @@ with open("notes.txt", "r") as file:
     content = file.readlines()
 
 print(content)
+
+# tell() and seek()
+with open("notes.txt","r") as file:
+    file.read(3)
+    print(file.tell())
+    file.seek(0)

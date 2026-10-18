@@ -13,3 +13,9 @@ with open("notes.txt","r") as file:
     file.read(3)
     print(file.tell())
     file.seek(0)
+
+# JSON
+import json
+student = {"name":"Ashi","marks":85}
+text = json.dumps(student)
+print(text)

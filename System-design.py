@@ -19,3 +19,11 @@ import json
 student = {"name":"Ashi","marks":85}
 text = json.dumps(student)
 print(text)
+
+# Type hints with function
+def calculate_total(price:float,quantity:int) -> float:
+    total = price*quantity
+    return total
+
+result = calculate_total(5.5,2)
+print(result)
